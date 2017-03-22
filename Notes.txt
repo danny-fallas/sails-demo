@@ -1,0 +1,26 @@
+Assets - hold all the css and js code that I need to consume in my web app
+config/routes - hold the app FE routing
+layout - this is the main page that holds all the views
+Assets/js/dependencies - will load everything before what is out side dependencies folder
+
+when you create a controller "sails generate api emoji" this creates the controller , model and a background REST service
+/emoji/create
+/emoji/destroy
+/emoji/find
+/emoji/findOne
+/emoji/update
+These are the default actions in a controller
+
+We can use any FE react , angular
+
+api/services - allow us to have functionality that will be available through all the app
+api/policies - protect our actions
+api/responses - res.[file in here] will end the action
+
+config/bootstrap - allow us to load things before lift starts the server
+config/connections - sets the connection strings
+config/models - allows us to set which connection we are gonna use
+
+.tmp/localDiskdb.db this is where the data is stored, still no DB
+
+Redis is a session adapter. We can use a registogo, and add this to the config/session.js file and to the config/sockets.js .
