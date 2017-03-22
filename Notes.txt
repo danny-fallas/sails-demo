@@ -24,3 +24,20 @@ config/models - allows us to set which connection we are gonna use
 .tmp/localDiskdb.db this is where the data is stored, still no DB
 
 Redis is a session adapter. We can use a registogo, and add this to the config/session.js file and to the config/sockets.js .
+
+sails generate model emoji - to create a model instead of an api
+
+http://localhost:1337/emoji?where={"text":%20{"contains":":"}} 
+we can use this to find specific from models
+
+config/routes.js
+it has blueprints so thats why we can get /emoji
+
+config/blueprints.js - this is where we can set the default actions to work
+If you disable shortcuts you can't do create directly from the URL , you must use post
+
+In our models we can make relations by using collection, via, model as properties of the attributes related.
+
+In the controllers you can use any node code.
+
+Minute 30

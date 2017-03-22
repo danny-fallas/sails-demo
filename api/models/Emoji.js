@@ -14,7 +14,23 @@ module.exports = {
   attributes: {
     text: {
       type: 'string'
-    }
+    },
+
+    //Every emoji belongs to user
+    owner: {
+      model: 'User'
+    },
+
+    //Every emoji belongs to user
+    ownerName: {
+      model: 'User'
+    },
+
+    // //This emoji is the least favorite of user
+    // leastFavoriteOf: {
+    //   collection: 'User',
+    //   via: 'leastFavoriteEmojis'
+    // }
   }
 };
 
